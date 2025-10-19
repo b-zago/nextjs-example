@@ -6,7 +6,8 @@ import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
 
-export const dynamic = 'force-dynamic'
+//export const dynamic = 'force-dynamic'
+export const revalidate = 60;
  
 export default async function Page() {
   
